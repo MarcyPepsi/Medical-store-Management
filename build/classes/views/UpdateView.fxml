@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.UpdateViewController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="addStock-bg" stylesheets="@style.css">
+         <children>
+            <AnchorPane layoutX="270.0" layoutY="44.0" prefHeight="290.0" prefWidth="325.0" styleClass="loginAnchorPane-bg">
+               <children>
+                  <Label layoutX="14.0" layoutY="45.0" text="Drug Name:">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="comboBoxItemName" layoutX="104.0" layoutY="35.0" onAction="#selectComboBox" prefHeight="25.0" prefWidth="188.0" />
+                  <Label layoutX="14.0" layoutY="88.0" text="Current Qty:">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="currentQty" layoutX="104.0" layoutY="82.0" prefHeight="25.0" prefWidth="188.0" />
+                  <Label layoutX="30.0" layoutY="124.0" text="Quantity:">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="newQty" layoutX="104.0" layoutY="121.0" prefHeight="25.0" prefWidth="188.0" />
+                  <JFXButton buttonType="RAISED" layoutX="99.0" layoutY="199.0" onAction="#updateStock" prefHeight="27.0" prefWidth="127.0" styleClass="loginButton-bg" text="UPDATE STOCK">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

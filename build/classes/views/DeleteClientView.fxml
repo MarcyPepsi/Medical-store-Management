@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="826.0" styleClass="addStock-bg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.DeleteClientViewController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutX="249.0" layoutY="27.0" prefHeight="247.0" prefWidth="329.0" styleClass="loginAnchorPane-bg">
+               <children>
+                  <Label layoutX="31.0" layoutY="51.0" text="Client Name:">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="comboBoxItemName" layoutX="121.0" layoutY="41.0" onAction="#selectComboBox" prefHeight="25.0" prefWidth="188.0" />
+                  <JFXButton buttonType="RAISED" layoutX="101.0" layoutY="147.0" onAction="#deleteClient" prefHeight="27.0" prefWidth="127.0" styleClass="loginButton-bg" text="DELETE CLIENT">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AddStockController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="addStock-bg" stylesheets="@style.css">
+         <children>
+            <AnchorPane layoutX="280.0" layoutY="9.0" prefHeight="389.0" prefWidth="355.0" styleClass="loginAnchorPane-bg" stylesheets="@style.css" AnchorPane.topAnchor="9.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="263.0" spacing="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="15.0">
+                     <children>
+                        <JFXTextField fx:id="itemName" labelFloat="true" prefHeight="25.0" prefWidth="236.0" promptText="Drug Name" />
+                        <JFXTextField fx:id="itemPrice" labelFloat="true" promptText="Drug Price" />
+                        <JFXTextField fx:id="quantity" labelFloat="true" layoutX="10.0" layoutY="35.0" promptText="Quantity" />
+                        <JFXComboBox fx:id="company" prefHeight="25.0" prefWidth="255.0" promptText="Company Name" />
+                        <JFXTextField fx:id="location" labelFloat="true" promptText="Location" />
+                        <JFXTextField fx:id="expireDate" labelFloat="true" layoutX="10.0" layoutY="110.0" promptText="Expire Date" />
+                     </children>
+                  </VBox>
+                  <JFXButton buttonType="RAISED" layoutX="142.0" layoutY="330.0" onAction="#addNewStock" styleClass="addStockButton-bg" text="ADD STOCK" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

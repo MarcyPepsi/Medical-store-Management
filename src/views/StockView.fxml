@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="530.0" prefWidth="826.0" styleClass="StockAnchorPane-bg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.StockViewController">
+   <children>
+      <HBox layoutX="10.0" layoutY="40.0" prefHeight="65.0" prefWidth="813.0" spacing="17.0" styleClass="hbox-bg">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <JFXButton fx:id="addStockButton" onAction="#openAddStock" prefHeight="65.0" prefWidth="199.0" styleClass="stockButton-bg" stylesheets="@style.css" text="ADD STOCK">
+               <font>
+                  <Font name="Book Antiqua Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <JFXButton fx:id="deleteStockButton" layoutX="10.0" layoutY="10.0" onAction="#openDeleteStock" prefHeight="65.0" prefWidth="212.0" styleClass="stockButton-bg" stylesheets="@style.css" text="DELETE STOCK">
+               <font>
+                  <Font name="Book Antiqua Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/delete-1432400-1211078.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <JFXButton fx:id="updateStockButton" layoutX="159.0" layoutY="10.0" onAction="#openUpdateStock" prefHeight="65.0" prefWidth="220.0" styleClass="stockButton-bg" stylesheets="@style.css" text="UPDATE STOCK">
+               <font>
+                  <Font name="Book Antiqua Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/update-autorenew-refresh-reload-31805.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <JFXButton fx:id="viewStockButton" layoutX="363.0" layoutY="10.0" onAction="#openViewStock" prefHeight="65.0" prefWidth="204.0" styleClass="stockButton-bg" stylesheets="@style.css" text="VIEW STOCKS">
+               <font>
+                  <Font name="Book Antiqua Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/view-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+         </children>
+      </HBox>
+      <Label layoutX="367.0" layoutY="14.0" text="STOCKS" textFill="#88ebea" underline="true">
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font>
+      </Label>
+      <StackPane fx:id="containStackPane" layoutY="105.0" prefHeight="426.0" prefWidth="826.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

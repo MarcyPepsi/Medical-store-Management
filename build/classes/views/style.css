@@ -1,0 +1,114 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 11, 2020, 3:19:11 PM
+    Author     : Marcy GADEU
+*/
+.loginStackPane-bg
+{
+    -fx-background-color: skyblue;
+    -fx-background-radius: 15px;
+}
+.loginAnchorPane-bg
+{
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+}
+.textField-bg
+{
+    -fx-background-radius: 15px;
+}
+.loginButton-bg
+{
+    -fx-background-color: skyblue;
+    -fx-text-fill:  white;
+    
+    -fx-background-radius: 15px;
+}
+.vbox-bg
+{
+    -fx-background-color: #F7FF3C;
+}
+.vboxButton-bg
+{
+    -fx-background-color: #F7FF3C;
+}
+.ButtonWelcome-bg
+{
+    -fx-background-color: skyblue;
+    -fx-text-fill:  white;
+
+}
+.dashboard1-bg
+{
+    -fx-background-color: lightgrey;
+    -fx-text-fill:  white;
+    -fx-background-radius: 15px;
+}
+.dashboard2-bg
+{
+    -fx-background-color: rosybrown;
+    -fx-text-fill:  white;
+    -fx-background-radius: 15px;
+
+}
+.dashboard3-bg
+{
+    -fx-background-color: sandybrown;
+    -fx-text-fill:  white;
+    -fx-background-radius: 15px;
+
+}
+.dashboard4-bg
+{
+    -fx-background-color: lightgreen;
+    -fx-text-fill:  white;
+    -fx-background-radius: 15px;
+
+}
+.StockAnchorPane-bg
+{
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+}
+.hbox-bg
+{
+    -fx-background-color: skyblue;
+}
+.stockButton-bg
+{
+    -fx-background-color: skyblue;
+    -fx-text-fill:  white;
+    -fx-background-radius: 15px;
+}
+.addStockButton-bg
+{
+    -fx-background-color: deepskyblue;
+    -fx-text-fill:  white;
+    -fx-background-radius: 15px;
+}
+.addStock-bg
+{
+    -fx-background-color: #F7FF3C;
+    
+}
+.table-row-cell-bg :odd
+{
+    -fx-background-color: yellow;
+    -fx-padding: 0.0em;
+    
+}
+.table-row-cell-bg :even
+{
+    -fx-background-color: #33CC00;
+    -fx-padding: 0.0em;
+    
+}
+.sell-bg
+{
+    -fx-background-color: #F7FF3C;
+    -fx-background-radius: 15px;
+}

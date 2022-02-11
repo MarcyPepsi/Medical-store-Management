@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.UpdateClientViewController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="addStock-bg" stylesheets="@style.css">
+         <children>
+            <AnchorPane layoutX="280.0" layoutY="9.0" prefHeight="389.0" prefWidth="355.0" styleClass="loginAnchorPane-bg" stylesheets="@style.css" AnchorPane.topAnchor="9.0">
+               <children>
+                  <VBox prefHeight="301.0" prefWidth="263.0" spacing="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="15.0">
+                     <children>
+                        <JFXComboBox fx:id="clientComboBox" onAction="#selectComboBox" prefHeight="25.0" prefWidth="259.0" />
+                        <JFXTextField fx:id="clientName" labelFloat="true" prefHeight="25.0" prefWidth="236.0" promptText="Client Name" />
+                        <JFXTextField fx:id="mobile" labelFloat="true" promptText="Mobile" />
+                        <JFXTextField fx:id="address" labelFloat="true" layoutX="10.0" layoutY="35.0" promptText="Address" />
+                        <JFXComboBox fx:id="city" prefHeight="25.0" prefWidth="255.0" promptText="City" />
+                     </children>
+                  </VBox>
+                  <JFXButton buttonType="RAISED" layoutX="131.0" layoutY="350.0" onAction="#updateClient" styleClass="addStockButton-bg" text="UPDATE CLIENT" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

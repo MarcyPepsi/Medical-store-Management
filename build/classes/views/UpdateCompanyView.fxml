@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.UpdateCompanyViewController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="addStock-bg" stylesheets="@style.css">
+         <children>
+            <AnchorPane layoutX="280.0" layoutY="9.0" prefHeight="389.0" prefWidth="355.0" styleClass="loginAnchorPane-bg" stylesheets="@style.css" AnchorPane.topAnchor="9.0">
+               <children>
+                  <VBox prefHeight="301.0" prefWidth="263.0" spacing="40.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="15.0">
+                     <children>
+                        <JFXComboBox fx:id="comboBoxCompanyName" onAction="#selectCompanyName" prefHeight="25.0" prefWidth="244.0" />
+                        <JFXTextField fx:id="companyName" labelFloat="true" prefHeight="25.0" prefWidth="236.0" promptText="Company Name" />
+                        <JFXTextField fx:id="mobile" labelFloat="true" promptText="Mobile" />
+                        <JFXTextField fx:id="address" labelFloat="true" layoutX="10.0" layoutY="35.0" promptText="Address" />
+                        <JFXTextField fx:id="contactPerson" labelFloat="true" layoutX="10.0" layoutY="160.0" promptText="Contact Person" />
+                     </children>
+                  </VBox>
+                  <JFXButton buttonType="RAISED" layoutX="117.0" layoutY="328.0" onAction="#updateCompany" styleClass="addStockButton-bg" text="UPDATE COMPANY" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
